@@ -20,7 +20,7 @@ const indexPage = `
     <h1>Random Number Web Service</h1>
     <p>
       Random Number Web Service - the endpoint is here --> 
-      <a href="/random-number">random-number</a> or <a href="/random-number?max=10">random-number?max=10</a>
+      <a href="/random-number">random-number</a> or <a href="/random-number?max=10">random-number?max=10</a> or <a href="/special-magic-random-number">special-magic-random-number</a>
     </p>
   </body>
 </html>`;
@@ -47,7 +47,7 @@ const getRandomNumberJSON = (max=1) => {
 	max = !max ? 1 : max;
 	max = max < 1 ? 1 : max;
 	
-	const number = Math.floor(Math.random() * max);
+	const number = Math.random() * max;
 	const responseObj = {
 		timestamp : new Date(),
 		number: number
