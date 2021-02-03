@@ -91,5 +91,6 @@ const onRequest = (request, response) => {
 
 // 8 - create the server, hook up the request handling function, and start listening on `port`
 http.createServer(onRequest).listen(port);
-
+ 
+console.log(`restarting server!`);
 console.log(`Listening on 127.0.0.1: ${port}`);
