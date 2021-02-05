@@ -1,7 +1,6 @@
 const name = 'fred';
 const car = {
-  make: 'ford',
-  make: "ford"
+  make: 'ford'
 };
 
 // 1 - pull in the HTTP server module
